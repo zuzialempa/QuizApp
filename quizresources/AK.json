@@ -1,0 +1,60 @@
+{
+    "type": "trueFalse",
+    "list": [
+        {
+            "question": "Czy w CISC...",
+            "answer": [
+                {
+                    "text": "moze byc wykonana w VLIW",
+                    "correct": false,
+                    "desc": "Nie, architektura VLIW dotyczy mikroprocesorów i miała na celu jak najwieksze zmniejszenie jednostki centralnej i jej rozkazów (RISC)."
+                },
+                {
+                    "text": "wystepuje model wymiany danych typu pamiec - pamiec",
+                    "correct": true,
+                    "desc": "Tak, posiada równiez niewielka ilosc rejestrów."
+                },
+                {
+                    "text": " jest mała liczba rozkazów",
+                    "correct": false,
+                    "desc": "Nie, w tej architekturze jest PEŁNA (complex) lista rozkazów. Niektóre z zaawansowanych plecen nawet nie były wykorzystywane, i bum! tak powstał RISC."
+                }
+            ]
+        },
+        {
+            "question": "Czy w RISC...",
+            "answer": [
+                {
+                    "text": "wystepuje model wymiany danych typu rej-rej",
+                    "correct": true,
+                    "desc": "Tak, a komunikacja z pamiecia operacyjna odbywa sie wyłacznie za pomoca rozkazów LOAD i STORE."
+                },
+                {
+                    "text": " jest mała liczba trybów adresowania",
+                    "correct": true,
+                    "desc": "Tak, raptem 4 w procesorze RISC I podczas gdy CISCi moga miec ich kilkanascie, w tym takie bardzo złozone."
+                },
+                {
+                    "text": " jest wykonywanych kilka rozkazów w jednym takcie",
+                    "correct": false,
+                    "desc": "Fałsz. Prawdziwe wykonywanie wielu rozkazów w jednym takcie wymaga superskalarnosci - wielu jednostek potokowych. Cecha architektury RISC jest potokowosc, ale pojedyncza."
+                },
+                {
+                    "text": " jest wykonywanych kilka rozkazów w jednym takcie (w danej chwili czasu)",
+                    "correct": true,
+                    "desc": "Chodzi o przetwarzanie potokowe. Tu jest haczyk - pierwszy procesor RISC I (1980) stawiał sobie za cel wykonanie jednego rozkazu w jednym takcie i dokładnie tak brzmiało jego załozenie projektowe. Jednak jego fizyczna realizacja (1982) posiadała dwustopniowy potok. Równiez w wykładach jako cecha tej architektury jest napisane ”Intensywne wykorzystanie przetwarzania potokowego”, co odnosi sie do faktu, ze obecnie nie ma procesora typu RISC, który go nie ma. Wg mnie prawda."
+                },
+                {
+                    "text": " jest wykonywanych kilka instrukcji procesora w jednym rozkazie asemblerowym",
+                    "correct": false,
+                    "desc": "Nic mi na ten temat nie wiadomo. Brzmi jednak zbyt hardo i odlegle od tematu zmniejszania ilosci rozkazów."
+                },
+                {
+                    "text": "jest układ sterowania w postaci logiki szytej",
+                    "correct": true,
+                    "desc": ""
+                }
+            ]
+        }
+    ]
+}
